@@ -8,7 +8,7 @@ const NavBar = () => {
   const { status, data: session } = useSession();
 
   return (
-    <div className="bg-slate-200 p-2 mb-5 flex gap-5">
+    <div className="bg-slate-200 p-2 mb-5 flex gap-5 font-komigo">
       <Link href="/">Home</Link>
       <Link href="/users">Users</Link>
       {status === 'loading' && <div>Loading...</div>}
