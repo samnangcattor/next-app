@@ -1,15 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-import ProductCart from './components/ProductCard/ProductCart';
-import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
-import Image from 'next/image';
-import coffee from '@/public/images/caffe.jpg';
-import { Metadata } from 'next';
-import { prisma } from '@/prisma/client';
 import { useState } from 'react';
-import dynamic from 'next/dynamic';
 // const HeavyComponent = dynamic(() => import('./components/HeavyComponent'), {
 //   ssr: false,
 //   loading: () => <p>Loading...</p>,
